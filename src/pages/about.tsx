@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';  // Import icons from react-icons
-import './About.css';
+import './about.css';
 import image from "../assets/me.jpg";
 
 const About: React.FC = () => {
