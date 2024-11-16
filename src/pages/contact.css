@@ -1,0 +1,169 @@
+.contact-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 270px;
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #003176;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #00265b;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 40px 30px; /* Adjusted padding for a compact design */
+    text-align: center;
+    border-radius: 12px;
+    width: 350px; /* Adjusted width for a more compact popup */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circle animation */
+.checkmark-circle {
+    position: relative;
+    margin-bottom: 20px;
+    width: 120px; /* Reduced size */
+    height: 120px; /* Reduced size */
+    border-radius: 50%;
+    border: 5px solid #00265b; /* Adjusted border for smaller circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1.5s ease-out;
+}
+
+.circle-background {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 5;
+}
+
+.circle-animate {
+    fill: none;
+    stroke: #00265b;
+    stroke-width: 5;
+    stroke-dasharray: 75.4; /* Circumference of the circle */
+    stroke-dashoffset: 75.4;
+    animation: drawCircle 2s ease forwards;
+}
+
+/* Thinner tick */
+.checkmark-path {
+    fill: none;
+    stroke: #00265b;
+    stroke-width: 3; /* Thinner tick */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: drawCheckmark 1s 2s forwards; /* Delayed for circle animation */
+}
+
+/* Circle drawing animation */
+@keyframes drawCircle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Checkmark drawing animation */
+@keyframes drawCheckmark {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Pulse effect on circle */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2); /* Slightly increased scale for subtle bounce */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+/* Remove sent text */
+.sent-message {
+    display: none; /* Removed the sent message */
+}
+
+.close-button {
+    background-color: #00265b;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Slightly larger button for better interaction */
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.close-button:hover {
+    background-color: #00265b;
+}

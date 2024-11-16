@@ -1,0 +1,167 @@
+/* General styles (unchanged) */
+.about-container {
+    font-family: 'Arial', sans-serif;
+    padding: 40px; 
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-header h1 {
+    font-size: 3rem;
+    color: #003176;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.about-description {
+    flex: 1;
+    font-size: 1rem;
+    color: #003176;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.about-description p {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 270px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid #003176;
+}
+
+.about-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #cdcdcd;
+    border-radius: 10px;
+}
+
+.about-footer h3 {
+    font-size: 2rem;
+    color: #003176;
+}
+
+.about-footer p {
+    font-size: 1.1rem;
+    color: #003176;
+}
+
+.social-icons {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003176;
+    text-decoration: none;
+    transition: ease 0.5s;
+}
+
+.social-icons a:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+
+/* For tablets (width 768px and below) */
+@media (max-width: 768px) {
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-header p {
+        font-size: 1.2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-description {
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+/* For mobile phones (width 480px and below) */
+@media (max-width: 480px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .about-header h1 {
+        font-size: 2rem;
+    }
+    
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        gap: 10px;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+
+    .about-footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-footer p {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 0.9rem;
+    }
+}

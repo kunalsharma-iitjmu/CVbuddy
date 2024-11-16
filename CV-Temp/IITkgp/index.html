@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Template 1</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="../global.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="m-4 d-flex justify-content-center">
+      <button id="editCv" class="btn btn-secondary mx-2">Edit</button>
+      <button id="saveCv" class="btn btn-primary mx-2">Save</button>
+      <button id="resetCv" class="btn btn-danger mx-2">Reset</button>
+      <button id="printCv" class="btn btn-success mx-2">Download</button>
+      <button id="toggleButton" onclick="toggleImageContent()" class="btn btn-secondary mx-2">No Img</button>
+      
+    </div>
+    <div class="vibrant-text">
+      Press the <strong>Edit</strong> button then You can change or add anything
+    </div>
+    <hr class="section-separator" />
+    <div id="cv" class="iitkgp-cv-container cv-container">
+      <div class="header">
+        <div>
+          <img src="../iit.png" />
+        </div>
+        <div>
+          <h1><span class="name">Your Name</span> | <span class="roll">Your College ID</span></h1>
+          <h2 class="campus">Indian Institute of Technology Jammu</h2>
+        </div>
+        <div id="imageDiv">
+          <img id="previewImage" src="../pp.jpg" />
+          <input type="file" id="imageInput" style="display: none;" />
+        </div>
+      </div>
+      <div class="education">
+        <h1 class="section-heading">
+          Education
+        </h1>
+        <div class="section-body">
+          <table>
+            <tr class="table-header">
+              <th>
+                Year
+              </th>
+              <th>
+                Degree/Exam
+              </th>
+              <th>
+                Institute
+              </th>
+              <th>
+                CGPA/Percentage
+              </th>
+            </tr>
+            <tr>
+              <td>
+                20XX
+              </td>
+              <td>
+                Your Degree / Your Cource Name
+              </td>
+              <td>
+                Indian Institute of Technology Jammu
+              </td>
+              <td>
+                CGPA
+              </td>
+            </tr>
+            <tr>
+              <td>
+                20XX
+              </td>
+              <td>
+                Class XII, Your Boarc
+              </td>
+              <td>
+                Your School / College Name
+              </td>
+              <td>
+                Grades
+              </td>
+            </tr>
+            <tr>
+              <td>
+                20XX
+              </td>
+              <td>
+                Class X, Your Board
+              </td>
+              <td>
+                Your School / College Name
+              </td>
+              <td>
+                Grade
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="projects">
+        <h1 class="section-heading">
+          Internships and Projects
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li class="heading">
+              <span>
+                Project Name
+                <span class="timeline">From - To</span>
+              </span>
+              <span class="prof">Prof. Name</span>
+            </li>
+            <li>
+              Discription line 1
+            </li>
+            <li>
+              Description line 2
+            </li>
+            <li>
+              Link to repository is <a href="#">here</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="heading">
+              <span>
+                Project Name
+                <span class="timeline">From - To</span>
+              </span>
+              <span class="prof">Prof. Name</span>
+            </li>
+            <li>
+              Discription Line 1
+            </li>
+            <li>
+              Discription Line 2
+            </li>
+            <li>
+              Link to repository is <a href="#">here</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="heading">
+              <span>
+                Internship Name
+                <span class="timeline">From - To</span>
+              </span>
+              <span class="prof">Prof. Name</span>
+            </li>
+            <li>
+              Discription Line 1
+            </li>
+            <li>
+              Discription Line 2
+            </li>
+          </ul>
+          <ul>
+            <li class="heading">
+              <span>
+                Internship Name
+                <span class="timeline">From - To</span>
+              </span>
+              <span class="prof">Prof. Name</span>
+            </li>
+            <li>
+              Discription Line 1
+            </li>
+            <li>
+              Discription Line 2
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills">
+        <h1 class="section-heading">
+          Skills and expertise
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li>
+              <strong>Programming Languages: </strong>
+              (Write All your Programming Languages Here)
+            </li>
+            <li>
+              <strong>Frameworks and Libraries: </strong>
+              (Write All your Frameworks And Libraries Here)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="certifications">
+        <h1 class="section-heading">
+          Certifications
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li class="heading">
+              <span>
+                Certification Name
+                <span class="society"> | Certification Provider</span>
+              </span>
+            </li>
+            <li>
+              Discription line 1
+            </li>
+            <li>
+              Discription line 2
+            </li>
+            <li>
+              Discription line 3
+            </li>
+          </ul>
+          <ul>
+            <li class="heading">
+              <span>
+                Certification Name
+                <span class="society"> | Certification Provider</span>
+              </span>
+            </li>
+            <li>
+              Discription line 1
+            </li>
+            <li>
+              Discription line 2
+            </li>
+            <li>
+              Description line 3
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="courses">
+        <h1 class="section-heading">
+          Coursework Information
+        </h1>
+        <div class="section-body">
+          <table class="list-table">
+            <tr>
+              <td>Course 1</td>
+              <td>Course 2</td>
+            </tr>
+            <tr>
+              <td>Course 3</td>
+              <td>Course 4</td>
+            </tr>
+            <tr>
+              <td>Course 5</td>
+              <td>Course 6</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="pors">
+        <h1 class="section-heading">
+          Positions of Responsibility
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li class="heading">
+              <span>
+                Position Name
+                <span class="society"> | Club / Society Name </span>
+              </span>
+              <span class="timeline">From - To</span>
+            </li>
+            <li>
+              Discription Line 1
+            </li>
+            <li>
+              Discription Line 2
+            </li>
+            <li>
+              Discription Line 3
+            </li>
+          </ul>
+          <ul>
+            <li class="heading">
+              <span>
+                Position Name
+                <span class="society"> | Club / Society Name </span>
+              </span>
+              <span class="timeline">From - To</span>
+            </li>
+            <li>
+              Discription Line 1
+            </li>
+            <li>
+              Discription Line 2
+            </li>
+            <li>
+              Discription Line 3
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="achievements">
+        <h1 class="section-heading">
+          Awards and Achievements
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li>
+              Achievement 1
+            </li>
+            <li>
+              Achievement 2
+            </li>
+            <li>
+              Achievement 3
+            </li>
+            <li>
+              Achievement 4
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="extra-curricular-activities">
+        <h1 class="section-heading">
+          Extra Curricular Activities
+        </h1>
+        <div class="section-body">
+          <ul>
+            <li>
+              <Strong>Activity Name</Strong>: Activity Discription
+            </li>
+            <li>
+              <Strong>Activity Name</Strong>: Activity Discription
+            </li>
+            <li>
+              <Strong>Activity Name</Strong>: Activity Discription
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../global.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+  <script>
+    const imageDiv = document.getElementById('imageDiv');
+    const imageInput = document.getElementById('imageInput');
+    const previewImage = document.getElementById('previewImage');
+  
+    imageDiv.addEventListener('click', function() {
+      imageInput.click();
+      console.log("imageDivpressed");
+    });
+  
+    imageInput.addEventListener('change', function() {
+      const file = imageInput.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = function(e) {
+        previewImage.src = e.target.result;
+      };
+  
+      reader.readAsDataURL(file);
+    });
+  </script>
+    <script>
+      function toggleImageContent() {
+        const toggleButton = document.getElementById('toggleButton');
+        const previewImage = document.getElementById('previewImage');
+  
+        if (toggleButton.innerHTML === 'No Img') {
+          toggleButton.innerHTML = 'Need Img';
+          previewImage.style.display = 'none';
+        } else {
+          toggleButton.innerHTML = 'No Img';
+          previewImage.style.display = 'block';
+        }
+      }
+    </script>
+</body>
+
+</html>
